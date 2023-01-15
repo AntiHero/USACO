@@ -3,7 +3,6 @@ ID: cl34nc0d3r
 LANG: C++
 TASK: ride
 */
-#include <iostream>
 #include <fstream>
 #include <string>
 
@@ -26,12 +25,12 @@ int main()
     int group_mul = 1;
     int comet_mul = 1;
 
-    for (char const &c : group_name)
+    for (auto c : group_name)
     {
         group_mul *= int(c) - int('A') + 1;
     }
 
-    for (char const &c : comet_name)
+    for (auto c : comet_name)
     {
         comet_mul *= int(c) - int('A') + 1;
     }
