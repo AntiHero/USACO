@@ -39,7 +39,6 @@ int main()
 
     while (true)
     {
-
         if (!(fin >> giver_name))
             break;
 
